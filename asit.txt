@@ -5,3 +5,22 @@ Asit kumar prusty
 TNQ
 
 Nimble
+
+
+
+---------------------------------------------------
+
+
+2nd time commit
+
+3.1 Git Branching - Branches in a Nutshell
+Nearly every VCS has some form of branching support. Branching means you diverge from the main line of development and continue to do work without messing with that main line. In many VCS tools, this is a somewhat expensive process, often requiring you to create a new copy of your source code directory, which can take a long time for large projects.
+
+Some people refer to Git’s branching model as its “killer feature,” and it certainly sets Git apart in the VCS community. Why is it so special? The way Git branches is incredibly lightweight, making branching operations nearly instantaneous, and switching back and forth between branches generally just as fast. Unlike many other VCSs, Git encourages workflows that branch and merge often, even multiple times in a day. Understanding and mastering this feature gives you a powerful and unique tool and can entirely change the way that you develop.
+
+Branches in a Nutshell
+To really understand the way Git does branching, we need to take a step back and examine how Git stores its data.
+
+As you may remember from Getting Started, Git doesn’t store data as a series of changesets or differences, but instead as a series of snapshots.
+
+When you make a commit, Git stores a commit object that contains a pointer to the snapshot of the content you staged. This object also contains the author’s name and email, the message that you typed, and pointers to the commit or commits that directly came before this commit (its parent or parents): zero parents for the initial commit, one parent for a normal commit, and multiple parents for a commit that results from a merge of two or more branches.
